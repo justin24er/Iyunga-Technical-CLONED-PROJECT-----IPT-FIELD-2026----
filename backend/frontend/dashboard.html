@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard — Academia</title>
+<link rel="stylesheet" href="assets/css/variables.css" />
+<link rel="stylesheet" href="assets/css/global.css" />
+<link rel="stylesheet" href="assets/css/layout.css" />
+<link rel="stylesheet" href="assets/css/dashboard.css" />
+<link rel="stylesheet" href="assets/css/components.css" />
+<link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+<div class="app-shell" id="app-shell">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar">
+    <button id="mobile-toggle" class="btn icon-btn" style="display:none;position:fixed;top:16px;left:16px;z-index:50;">☰</button>
+
+    <div class="sidebar-logo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d99000" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="nav-item active" href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+        <span>Dashboard</span>
+      </a>
+      <a class="nav-item" href="students.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+        <span>Students</span>
+      </a>
+      <a class="nav-item" href="teachers.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <span>Teachers</span>
+      </a>
+      <a class="nav-item" href="subjects.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        <span>Subjects</span>
+      </a>
+      <a class="nav-item" href="earnings.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 9h4.5a1.5 1.5 0 0 1 0 3H10a1.5 1.5 0 0 0 0 3h5"/></svg>
+        <span>Earnings</span>
+      </a>
+      <a class="nav-item" href="messages.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span>Messages</span>
+      </a>
+      <a class="nav-item" href="settings.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06A2 2 0 1 1 7 4.29l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.14.31.22.65.22 1 .38.02.76.09 1.13.22H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span>Setting</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button class="nav-item" id="collapse-toggle" style="width:100%;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        <span>Collapse</span>
+      </button>
+      <a class="nav-item" href="#" id="logout-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+        <span>Logout</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="main-content">
+    <header class="dashboard-header">
+      <div class="dashboard-greeting">
+        <h1 id="greeting-text">Good Morning,</h1>
+        <p id="school-welcome">Welcome to Academia</p>
+      </div>
+
+      <div class="header-search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="global-search" placeholder="Search students, teachers, classes…" />
+      </div>
+    </header>
+
+    <section class="stats-grid" id="stats-grid">
+      <div class="card stat-card"><div class="skeleton" style="height:90px;"></div></div>
+      <div class="card stat-card"><div class="skeleton" style="height:90px;"></div></div>
+      <div class="card stat-card"><div class="skeleton" style="height:90px;"></div></div>
+      <div class="card stat-card"><div class="skeleton" style="height:90px;"></div></div>
+    </section>
+
+    <section class="content-grid">
+      <div class="card panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-title">Attendance Report <small id="attendance-period">(Last 10 days)</small></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div class="legend">
+              <span class="legend-dot present">Present</span>
+              <span class="legend-dot absent">Absent</span>
+            </div>
+            <select class="select-chip" id="attendance-range">
+              <option value="7">Last 7 Days</option>
+              <option value="10" selected>Last 10 Days</option>
+              <option value="30">Last 30 Days</option>
+            </select>
+          </div>
+        </div>
+        <div class="chart-wrap" id="attendance-chart-wrap">
+          <canvas id="attendanceChart"></canvas>
+        </div>
+      </div>
+
+      <div class="split-row">
+        <div class="card panel">
+          <div class="panel-head">
+            <span class="panel-title">Student Performance</span>
+          </div>
+          <div style="overflow-x:auto;">
+            <table class="data-table">
+              <thead>
+                <tr><th>Name</th><th>Class</th><th>Grade</th><th>Percentage</th><th></th></tr>
+              </thead>
+              <tbody id="performance-body">
+                <tr><td colspan="5"><div class="skeleton" style="height:20px;"></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card panel" id="demographics-wrap">
+          <div class="panel-head">
+            <span class="panel-title">Students</span>
+          </div>
+          <div class="donut-wrap">
+            <div class="donut-canvas-wrap">
+              <canvas id="demographicsChart"></canvas>
+              <div class="donut-center">
+                <div class="num" id="donut-total">—</div>
+                <div class="label">Students</div>
+              </div>
+            </div>
+            <div class="donut-legend">
+              <div><span class="swatch" style="background:#d99000;"></span>Girls: <strong id="donut-girls">—</strong></div>
+              <div><span class="swatch" style="background:#7a5200;"></span>Boys: <strong id="donut-boys">—</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RIGHT PANEL ============ -->
+  <aside class="right-panel">
+    <div class="panel-user">
+      <button class="icon-btn" aria-label="Notifications">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        <span class="dot"></span>
+      </button>
+      <div class="user-menu" id="user-menu-trigger">
+        <img id="user-avatar" src="" alt="" onerror="this.style.display='none'" />
+        <div>
+          <div class="user-menu-name" id="user-name">…</div>
+          <div class="user-menu-email" id="user-email">…</div>
+        </div>
+        <div class="user-dropdown" id="user-dropdown">
+          <a href="profile.html">Profile</a>
+          <a href="settings.html">Settings</a>
+          <button id="logout-btn-dropdown" onclick="logout()">Logout</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="promo-card">
+      <h3>Join the community and find out more</h3>
+      <button class="btn">Explore Now</button>
+    </div>
+
+    <div class="card calendar">
+      <div class="calendar-head">
+        <h4 id="calendar-month">—</h4>
+        <div class="calendar-nav">
+          <button id="calendar-prev">‹</button>
+          <button id="calendar-next">›</button>
+        </div>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+    </div>
+
+    <div class="card events-panel">
+      <div class="panel-head" style="padding:14px 14px 0;">
+        <span class="panel-title">Upcoming Events</span>
+      </div>
+      <div style="padding:10px 14px 14px;" id="events-list">
+        <div class="skeleton" style="height:60px;margin-bottom:10px;"></div>
+        <div class="skeleton" style="height:60px;"></div>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

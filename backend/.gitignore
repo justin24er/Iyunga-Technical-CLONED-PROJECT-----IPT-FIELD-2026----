@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.env
+.env.local
+*.log
+dist/
+.DS_Store
+backend-php/.env
+backend-php/vendor/

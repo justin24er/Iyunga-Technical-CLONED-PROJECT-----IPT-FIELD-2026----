@@ -1,0 +1,57 @@
+:root {
+  /* Brand */
+  --primary: #d99000;
+  --primary-dark: #b87700;
+  --secondary: #f4e7c5;
+
+  /* Surfaces */
+  --background: #f8f7f3;
+  --surface: #ffffff;
+  --sidebar-bg: #fdf6e8;
+
+  /* Text */
+  --text: #171717;
+  --muted: #777777;
+  --border: #ebe7de;
+
+  /* Status */
+  --success: #22c55e;
+  --success-bg: #e7f8ee;
+  --danger: #ef4444;
+  --danger-bg: #fdecec;
+  --warning: #f59e0b;
+  --warning-bg: #fef3e2;
+  --info: #3b82f6;
+  --info-bg: #eaf2fe;
+
+  /* Chart accents */
+  --chart-present: #d99000;
+  --chart-absent: #171717;
+  --chart-girls: #d99000;
+  --chart-boys: #7a5200;
+
+  /* Radii & shadow */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-card: 0 8px 24px rgba(23, 23, 23, 0.05);
+  --shadow-pop: 0 12px 32px rgba(23, 23, 23, 0.12);
+
+  /* Layout */
+  --sidebar-width: 220px;
+  --sidebar-width-collapsed: 88px;
+  --right-panel-width: 320px;
+  --header-height: 88px;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+[data-theme="dark"] {
+  --background: #14120e;
+  --surface: #1e1c17;
+  --sidebar-bg: #1a1712;
+  --text: #f5f2ea;
+  --muted: #a3a096;
+  --border: #2c2920;
+  --secondary: #3a3122;
+}

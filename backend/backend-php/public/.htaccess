@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# If the request is not for a real file or directory, send it to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# Never allow direct access to .env if it ends up in the webroot by mistake
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>

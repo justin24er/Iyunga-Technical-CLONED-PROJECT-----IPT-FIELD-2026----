@@ -9,10 +9,10 @@ lis.forEach(function(li){
     }
 })
 
-const map = L.map("mapSection").setView([-8.94197016499707, 33.41606482191847],15);
+const map = L.map("mapSection").setView([-8.94197016499707, 33.41606482191847],10);
 
 L.tileLayer(
-     "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+     "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
      {
         attribution: 'Esri'
      }
@@ -28,7 +28,7 @@ const customIcon = L.icon({
 L.marker([-8.94197016499707, 33.41606482191847],
     {icon: customIcon}
 ).addTo(map)
- .bindPopup("Maembe Daycare❤️.")
+ .bindPopup("Iyunga Secondary❤️.")
  .openPopup();
 
 setTimeout(() => {

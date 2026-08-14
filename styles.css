@@ -101,7 +101,7 @@ header.primary-header {
 }
 .primary-header .logo {
     width: 50px;
-    height: 50px;
+    aspect-ratio: 1;
     overflow: hidden;
 }
 .logo img {
@@ -438,19 +438,19 @@ section.timetable-section {
 }
 table {
     width: calc(100% - 6rem);
-    border-collapse: collapse;
-    table-layout: fixed;
     overflow: hidden;
     border-radius: 15px;
     transform: translateY(1.5rem) scale(.8);
     opacity: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
     animation: showUp linear both;
     animation-timeline: view(85% 0%);
 }
 td,th {
     padding-block: 2rem;
-    text-align: center;
     vertical-align: middle;
+    text-align: center;
     border: 1px solid #ffffff48;
 }
 th {

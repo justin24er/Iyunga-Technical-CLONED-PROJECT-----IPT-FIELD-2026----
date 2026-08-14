@@ -50,12 +50,12 @@
     <tr>
         <td align="center">
             <a href="https://github.com/justin24er">
-                <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=justin24er&layout=normal&border_color=E3EF26&border_radius=15&theme=tokyonight&text_color=E3EF26" alt="top-langs-card">
+                <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=justin24er&layout=donut-vertical&border_color=E3EF26&border_radius=15&theme=tokyonight&text_color=E3EF26" alt="top-langs-card">
             </a>
         </td>
         <td align="center">
             <a href="https://github.com/justin24er">
-                <img src="https://streak-stats.demolab.com?user=justin24er&theme=tokyonight&border_color=E3EF26&border_radius=15&fire=E3EF26" alt="streak-stats-card">
+                <img src="https://streak-stats.demolab.com?user=justin24er&theme=tokyonight&border_radius=15&fire=E3EF26" alt="streak-stats-card">
             </a>
         </td>
     </tr>

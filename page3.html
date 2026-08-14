@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+      <header class="primary-header">
+            <div class="logo-title">
+            <div class="logo">
+                <img src="./images/logo design-png.png" alt="mb-logo" />
+            </div>
+            <p class="brand-title">DayCare</p>
+            </div>
+            <nav>
+                <ul class="header-nav">
+                    <li aria-label="0rem"><a href="./page1.html">Home</a></li>
+                    <li aria-label="5.5rem"><a href="./page2.html">About Us</a></li>
+                    <li class="active" aria-label="11.5rem"><a href="./page3.html">Contact Us</a></li>
+                    <div class="indicator"></div>
+                </ul>
+            </nav>
+        </header>  
+        <main>
+            <section class="primary-hero page3-hero" style="--current-hero-img: url(./images/day_care_8.jpg)">
+                <h1>Connect with Maembe <span class='highlit'>DayCare</span>.</h1>
+                <div class="hero-des">
+                    <p>We'd love to hear from you. Whether you have questions, need more information, or are ready to join our family, our caring team is here to help every step of the way.</p>
+                </div>
+            </section>
+             <section class="core-values-section">
+                <div class="contact-wrapper">
+                    <div class="get-in-touch-side">
+                        <div class="get-in-touch-header">
+                            <h2 class="get-in-touch-title">get in touch</h2>
+                            <p>Maembe daycare is ready to serve right solution for your child accordingly.</p>
+                        </div>
+                        <div class="reach-us-section">
+                            <div class="more-info-details">
+                                <span class="icon-wrapper">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <span class="icon-details">
+                                    <div class="icon-detail-title">Head Office</div>
+                                    <div class="icon-detail-des">
+                                        <p>Iyunga Ikuti Must Uni</p>
+                                        <p>Mbeya - Tanzania</p>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="more-info-details">
+                                <span class="icon-wrapper">
+                                    <i class="fa-solid fa-at"></i>
+                                </span>
+                                <span class="icon-details">
+                                    <div class="icon-detail-title">Email Us</div>
+                                    <div class="icon-detail-des">
+                                        <p>jerletechy209@gmail.com</p>
+                                        <p>justineladius209@gmail.com</p>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="more-info-details">
+                                <span class="icon-wrapper">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <span class="icon-details">
+                                    <div class="icon-detail-title">Call Us</div>
+                                    <div class="icon-detail-des">
+                                        <p>Phone: +255673980285</p>
+                                        <p>Fax: +255750739864</p>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="socials-section">
+                            <h4 class="get-in-touch-socials-title">Follow our social media</h4>
+                            <div class="socials">
+                                <span class="facebook-social"><i class="fa-brands fa-facebook-f"></i></span>
+                                <span class="instagram-social"><i class="fa-brands fa-instagram"></i></span>
+                                <span class="twitter-social"><i class="fa-brands fa-twitter"></i></span>
+                                <span class="youtube-social"><i class="fa-brands fa-youtube"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="send-mssg-side">
+                        <h2 class="form-title">send us a message</h2>
+                        <form action="#" method="POST">
+                            <div class="name-section">
+                                <div class="first-name-section">
+                                    <label for="first-name">First name</label>
+                                    <input type="text" id="first-name" placeholder="first name" required />
+                                </div>
+                                <div class="second-name-section">
+                                    <label for="middle-name">Middle name</label>
+                                    <input type="text" id="middle-name" placeholder="middle name" />
+                                </div>
+                            </div>
+                            <div class="phone-section">
+                                <div class="phone-input">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" maxlength="20" placeholder="+123" required />
+                                </div>
+                                <div class="email-input">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="email" required />
+                                </div>
+                            </div> 
+                            <div class="subject-input">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="subject" required />
+                            </div>
+                            <div class="message-input">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Message" required></textarea>
+                            </div>
+                            <button id="cta-submit-btn" type="submit">Send &nbsp;&nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="mapSection" class="map-section"></section>
+        </main>
+        <footer>
+            <div class="footer-section">
+                &copy; 2026. Day Care, Made with ❤️ for children and families.
+            </div>
+        </footer>
+        <script src="./script.js"></script>
+</body>
+</html>

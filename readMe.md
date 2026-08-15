@@ -11,7 +11,7 @@
 ## <div align="center">**Skills Used**</div>
 <div align="center">
     <a href="https://github.com/justin24er">
-        <img src="https://skillicons.dev/icons?i=css,html,js,git,github&theme=light" alt="skill-icons">
+        <img src="https://skillicons.dev/icons?i=css,html,js,git,github,php&theme=light" alt="skill-icons">
     </a>
     <br><br><br>
     <a href="https://github.com/justin24er">

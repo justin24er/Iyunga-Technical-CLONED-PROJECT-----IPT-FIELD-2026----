@@ -45,23 +45,14 @@
     - gradient-2: linear-gradient(to right, #0c342c, #076653, var(--sporty)) 
     - gradient-3: linear-gradient(to right, #06231d, #0c342c, #076653) 
 
-## <div align="center">**Project Statistics**</div>
-<table align="center">
-    <tr>
-        <td align="center">
-            <a href="https://github.com/justin24er">
-                <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=justin24er&layout=donut-vertical&border_color=E3EF26&border_radius=15&theme=tokyonight&text_color=E3EF26" alt="top-langs-card">
-            </a>
-        </td>
-        <td align="center">
-            <a href="https://github.com/justin24er">
-                <img src="https://streak-stats.demolab.com?user=justin24er&theme=tokyonight&border_radius=15&fire=E3EF26" alt="streak-stats-card">
-            </a>
-        </td>
-    </tr>
-</table>
+### run from terminal  
+```
+...\Iyunga-Technical-CLONED-PROJECT-----IPT-FIELD-2026----> npm install project Statistics-ipt-ver1.6.26
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=montserrat&size=29&duration=3000&pause=1000&color=E2EF34&center=true&width=500&lines=%5B%E2%96%A0%E2%96%A0%E2%96%A0%E2%96%A0+PROJECT+ENCLOSURE+%E2%96%A0%E2%96%A0%E2%96%A0%E2%96%A0%5D;%F0%9F%92%96+APPRECIATED+YOUR+CONCERN+%F0%9F%92%96)](https://git.io/typing-svg)
+```
+
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=montserrat&size=20&duration=3000&pause=1000&color=E2EF34&center=true&width=500&lines=%5B%E2%96%A0%E2%96%A0%E2%96%A0%E2%96%A0+PROJECT+ENCLOSURE+%E2%96%A0%E2%96%A0%E2%96%A0%E2%96%A0%5D;%F0%9F%92%96+APPRECIATED+YOUR+CONCERN+%F0%9F%92%96)](https://git.io/typing-svg)
 
 <h2>
     {<a href="https://github.com/justin24er">justin24er</a>:
